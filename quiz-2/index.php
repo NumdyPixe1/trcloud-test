@@ -1,12 +1,15 @@
 <?php
-//   $result = isset($num) ? $num : '';  
-$v100 = $_POST['v100'];
-$v7 = $_POST['v7'];
-$v107 = $_POST['v107'];
-$v3 = $_POST['v3'];
-$v104 = $_POST['v104'];
-
+$v100 = null;
+$v7 = null;
+$v107 = null;
+$v3 = null;
+$v104 = null;
   if(isset($_POST['cal'])){
+    $v100 = $_POST['v100'];
+    $v7 = $_POST['v7'];
+    $v107 = $_POST['v107'];
+    $v3 = $_POST['v3'];
+    $v104 = $_POST['v104'];
     if(empty($v100) && empty($v7)&& empty($v107)&& empty($v3) &&empty($v104)){
      $v100= 0;$v7=0; $v107=0; $v3=0; $v104 = 0;
     }else{
@@ -65,7 +68,7 @@ $v104 = $_POST['v104'];
     <tr>
     <!-- value=<?php echo"$result"?> -->
         <!-- 100 -->
-        <td><input type="text" name="v100" value=<?php echo"$v100"?>        ></td>
+        <td><input type="text" name="v100" value=<?php echo"$v100"?> ></td>
          <!-- 7 -->
         <td><input type="text" name="v7" value=<?php echo"$v7"?> ></td>
          <!-- 107 -->

@@ -16,8 +16,8 @@
 </br>
 
 <?php
-    $num = $_POST['num'];
     if(isset($_POST['cal'])){
+        $num = $_POST['num'];
         if($num % 2 == 0){
             //คู่
             for($row = 0; $row < $num; $row++){
