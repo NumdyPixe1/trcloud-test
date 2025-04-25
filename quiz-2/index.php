@@ -22,15 +22,15 @@ $v104 = null;
        $v3 = (float)$v100* $percents[2];//3
        $v104 = (float)$v100* $percents[3];//104
     } else if($v7){         
-        $v100 = (float)$v7 / $percents[0];// n / 7
-        $v107 = (float)$v100 * $percents[1];//107
-        $v3 = (float)$v100 * $percents[2];//3
-        $v104 = (float)$v100 * $percents[3];//104
+        $v100 = (float)$v7 / $percents[0];// n / 0.07
+        $v107 = (float)$v100 * $percents[1];// 1.07
+        $v3 = (float)$v100 * $percents[2];// 3
+        $v104 = (float)$v100 * $percents[3];// 1.04
     } else if($v107){
-        $v100 = (float)$v107 / $percents[1];// n / 107
-        $v7 = (float)$v100* $percents[0];//7
-        $v3 = (float)$v100 * $percents[2];//3
-        $v104 = (float)$v100* $percents[3];//104
+        $v100 = (float)$v107 / $percents[1];// n / 0.07
+        $v7 = (float)$v100* $percents[0];// 1.07
+        $v3 = (float)$v100 * $percents[2];// 3
+        $v104 = (float)$v100* $percents[3];// 1.04
     }else if($v3){
         $v100 = (float)$v3 / $percents[2];// n / 3
         $v7 = (float)$v100* $percents[0];//7
